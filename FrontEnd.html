@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>BV</title>
+        <link rel="stylesheet" href="FrontEnd.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <img src="logo.jpg" alt="" class="logo">
+            <ul id="menu-links">
+                <li>About</li>
+                <li>Collection</li>
+                <li>Creator</li>
+                <li>Road Map</li>
+            </ul>
+            <button class="nav-btn">Sign In</button>
+            <img src="" alt="" class="menu-icon" onclick="ToggleMenu()">
+        </nav>
+        <div class="header">
+            <img src="bg.png" class="header">
+            <div class="top-left">We Have High<br>Quality NFT Collections</div>
+            <div class="top-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque mollitia recusandae iste culpa fugiat laborum hic ratione odio eveniet sapiente, officiis, aut numquam doloremque consequatur. Blanditiis minima omnis ut ad.</div>
+            <div class="btn-container">
+                <button>Get White List</button>
+            </div>
+            <div class="btn-container2">
+                <button>Contact Us</button>
+            </div>
+            <img src="hero.png" alt="" class="user-img">
+        </div>
+        <script>
+            let navbar=document.querySelector('nav');
+            let menuLinks=document.getElementById("menu-links");
+            function ToggleMenu(){
+                menuLinks.classList.toggle('show-menu');
+            }
+            window.onscroll=function()
+            {
+                if(window.scrollY>0){
+                    navbar.style.background='black';
+                }
+                else{
+                    navbar.style.background='transparent';
+                }
+            }
+        </script>
+
+    </body>
+</html>

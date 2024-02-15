@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+        font-family: "Protest Riot", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10%;
+    border-bottom: 1px solid  white;
+    z-index: 10;
+}
+nav ul li{
+    list-style: none;
+    color: white;
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+nav .logo{
+    width: 220px;
+    cursor: pointer;
+}
+.nav-btn
+{
+    background: orange;
+    color: white;
+    font-size: 16px;
+    padding: 15px 25px;
+    border: 0;
+    outline: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.header{
+    width: 100%;
+    color: black;
+    height: 100%;
+    display: flex;
+    justify-content: bottom;
+    flex-direction: column;
+}
+.nav-container{
+    background: orange;
+    color: white;
+    font-size: 16px;
+    padding: 15px 25px;
+    border: 0;
+    outline: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.nav-container2{
+    color: white;
+    font-size: 16px;
+    padding: 15px 25px;
+    border: 0;
+    outline: 0;
+    border-radius: 40px;
+    cursor: pointer;
+}
+.top-left {
+    color: white;
+    position: absolute;
+    top:  8px;
+    left: 16px;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+
+  }
+  .user-img{
+    width: 80%;
+    max-width: 500px;
+    position: absolute;
+    right: 13%;
+    bottom: 0;
+  }
+  @media only screen and max-width(max-width: 600PX){
+    nav ul{
+        position: absolute;
+        width: 100%;
+        background: #000;
+        color: #fff;
+        left: 0;
+        top: 100%;
+        text-align: center;
+    }
+    .nav-btn{
+        display: none;
+    }
+    nav.logo{
+        width: 150px;
+    }
+    .show-menu{
+        max-height: 60px;
+    }
+  }
