@@ -4,37 +4,87 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>BV</title>
         <link rel="stylesheet" href="FrontEnd.css">
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav>
-            <img src="logo.jpg" alt="" class="logo">
-            <ul id="menu-links">
-                <li>About</li>
-                <li>Collection</li>
-                <li>Creator</li>
-                <li>Road Map</li>
-            </ul>
-            <button class="nav-btn">Sign In</button>
-            <img src="" alt="" class="menu-icon" onclick="ToggleMenu()">
-        </nav>
-        <div class="header">
-            <img src="bg.png" class="header">
-            <div class="top-left">We Have High<br>Quality NFT Collections</div>
-            <div class="top-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque mollitia recusandae iste culpa fugiat laborum hic ratione odio eveniet sapiente, officiis, aut numquam doloremque consequatur. Blanditiis minima omnis ut ad.</div>
+        <section id="header">
+            <div class="container">
+                <img src="logo.jpg" alt="" class="logo">
+                <div class="header-text">
+            <h1>We Have High<br>Quality NFT Collections</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque mollitia recusandae iste culpa fugiat laborum hic ratione odio eveniet sapiente, officiis, aut numquam doloremque consequatur. Blanditiis minima omnis ut ad.</p>
             <div class="btn-container">
                 <button>Get White List</button>
             </div>
             <div class="btn-container2">
                 <button>Contact Us</button>
             </div>
+            </div>
+        </section>
+        <nav id="sideNav">
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#top-collections">Collection</a></li>
+                <li><a href="#top-creaters">Creator</a></li>
+            </ul>
+            <button class="nav-btn">Sign In</button>
+            <img src="" alt="" class="menu-icon" onclick="ToggleMenu()">
+        </nav>
+        
             <img src="hero.png" alt="" class="user-img">
         </div>
+        <section id="about">
+            <div class="about-left-col">
+                <img src="image 104.png">
+                <img src="image 105.png">
+                <img src="image 106.png">
+                <img src="image 107.png">
+            </div>
+            <div class="about-right-col">
+                <div class="about-text">
+                    <h1>
+                        About Us
+                    </h1>
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat incidunt aspernatur voluptatibus aut earum beatae! Dolore totam nihil ipsam corporis delectus inventore, voluptatum, consequatur nisi nesciunt assumenda quod odio.
+                    </p>
+                    <button class="about-btn">
+                        Connect Wallet
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section id="top-collections">
+            <div class="collections">
+                <h1>Top Collections</h1>
+                <img src="Frame 1261152802-1.png">
+                <img src="Frame 1261152802-2.png">
+                <img src="Frame 1261152802.png">
+                <img src="Ellipse 130.png">
+                <img src="Ellipse 132.png">
+            </div>    
+        </section>
+        <section id="top-creaters">
+            <div class="creaters">
+                <h1>Top Creaters</h1>
+                <img src="Ellipse 133-1.png">
+                <img src="Ellipse 133.png">
+                <img src="Ellipse 134-1.png">
+                <img src="Ellipse 134.png">
+                <img src="Ellipse 135.png">
+                <img src="Ellipse 136.png">
+                <img src="Ellipse 137.png">
+                <img src="Ellipse 138.png">
+            </div>    
+        </section>
+        <script>
+            var menuBtn=document.getElementById("menuBtn");
+            var sideNav=document.getElementById("menuBtn");
+        </script>
         <script>
             let navbar=document.querySelector('nav');
-            let menuLinks=document.getElementById("menu-links");
             function ToggleMenu(){
                 menuLinks.classList.toggle('show-menu');
             }
@@ -47,7 +97,7 @@
                     navbar.style.background='transparent';
                 }
             }
-        </script>
-
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
     </body>
 </html>
